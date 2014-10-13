@@ -1,0 +1,388 @@
+@import "compass/css3/";
+$rtRed: #cd2727;
+
+body{
+	background: url("http://127.0.0.1/HTML/RTAwards/img/pageBackground.jpg") repeat;
+	background-attachment:fixed;
+}
+
+.hidden{
+	width: 0;
+	height: 0;
+	display: none;
+}
+
+#userWrapper{
+	max-width: 850px;
+	margin: auto;
+}
+
+#errors{
+	position: fixed;
+	color: #FFFFFF;
+	font-weight: 600;
+	font-family: 'Exo 2', sans-serif;
+	background: #e74c3c;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #c0392b;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+#loginContent{
+	margin-left: calc(100% - 150px);
+}
+
+#loginLinks{
+	width: 160px;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 3px;
+	font-size: 16px;
+	color: #FFFFFF;
+	text-align: center;
+	font-weight: 600;
+	font-family: 'Exo 2', sans-serif;
+	background: $rtRed;
+	overflow: hidden;
+	
+	input[type="submit"]{
+		width: 100%;
+		height: 25px;
+		line-height: 25px;
+		margin: 0;
+		padding: 0;
+		background: none;
+		border-style: none;
+		color: #FFFFFF;
+		font-weight: bold;
+		text-align: center;
+	}
+}
+
+.loginLink{
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#loginForm{
+	display: none;
+	width: 200px;
+	height: 125px;
+	position: fixed;
+	margin-top: 10px;
+	background: #FFFFFF;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #bdc3c7;
+	border-radius: 3px;
+	
+	label{
+		margin-top: 5px;
+		margin-left: 20px;
+	}
+	
+	input{
+		margin-left: 20px;
+	}
+	
+	input[type="submit"]{
+		margin-top: 15px;
+	}
+}
+
+#registerForm{
+	display: none;
+	width: 200px;
+	height: 125px;
+	position: fixed;
+	margin-top: 10px;
+	background: #FFFFFF;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #bdc3c7;
+	border-radius: 3px;
+	
+	#rEmail{
+		
+	}
+	
+	#rAuthCode{
+		display: none;
+	}
+	
+	label{
+		margin-top: 5px;
+		margin-left: 20px;
+	}
+	
+	input{
+		margin-left: 20px;
+	}
+	
+	input[type="submit"]{
+		margin-top: 15px;
+	}
+}
+
+header {
+	width: 100%;
+	margin-top: 25px;
+	text-align: center;
+	font-size: 44px;
+	font-weight: 900;
+	color:  $rtRed;
+	font-family: 'Exo 2', sans-serif;
+}
+
+#page{
+	max-width: 1000px;
+	margin: auto;
+	background: #FFFFFF;
+	padding: 10px;
+}
+
+#navContainer{
+	max-width: 1000px;
+	width: 100%;
+	background: $rtRed;
+	margin: auto;
+	z-index: 2;
+}
+
+#headerNavBar {
+	width: 520px;
+	height: 40px;
+	margin: auto;
+}
+
+.navLink {
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-left: -4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background:  $rtRed;
+	
+	a{
+		font-size: 16px;
+		font-weight: 600;
+		color: #FFFFFF;
+		font-family: 'Exo 2', sans-serif;
+	}
+	
+	a:hover{
+		font-style: italic;
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+}
+
+.catagory{
+	width: 250px;
+	height: 50px;
+	line-height: 50px;
+	margin-top: 160px;
+	margin-bottom: -80px;
+	padding-left: 10px;
+	font-size: 26px;
+	background: $rtRed;
+	color: #FFFFFF;
+	font-weight: 400;
+	font-family: 'Exo 2', sans-serif;
+}
+
+.catagoryPageContent{
+	max-width: 850px;
+	padding-left: 20px;
+	margin-top: -20px;
+}
+
+.option{
+	width: 180px;
+	height: 150px;
+	margin-top: 100px;
+	margin-left: 20px;
+	display: inline-block;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #bdc3c7;
+	border-radius: 3px;
+	vertical-align: top;
+	cursor: pointer;
+
+
+	.content{
+		display: none;
+	}
+	
+	.title{
+		width: 100%;
+		height: 100px;
+		line-height: normal;
+		padding-top: 40px;
+		background: $rtRed;
+		text-align: center;
+		font-size: 20px;
+		color: #FFFFFF;
+		font-weight: bold;
+		font-family: 'Exo 2', sans-serif;
+	}
+	
+	.votes{
+		width: 100%;
+		height: 50px;
+		background: $rtRed;
+		font-size: 18px;
+		text-align: center;
+		color: #FFFFFF;
+		font-weight: bold;
+		font-family: 'Exo 2', sans-serif;
+	}
+}
+
+.option:hover{
+	
+	.content{
+		width: 100%;
+		height: 110px;
+		padding: 5px;
+		display: inherit;
+		background: #b4bfc6; /* Old browsers */
+		background: -moz-radial-gradient(center, ellipse cover,  #b4bfc6 36%, #95a5a6 100%); /* FF3.6+ */
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(36%,#b4bfc6), color-stop(100%,#95a5a6)); /* Chrome,Safari4+ */
+		background: -webkit-radial-gradient(center, ellipse cover,  #b4bfc6 36%,#95a5a6 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-radial-gradient(center, ellipse cover,  #b4bfc6 36%,#95a5a6 100%); /* Opera 12+ */
+		background: -ms-radial-gradient(center, ellipse cover,  #b4bfc6 36%,#95a5a6 100%); /* IE10+ */
+		background: radial-gradient(ellipse at center,  #b4bfc6 36%,#95a5a6 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4bfc6', endColorstr='#95a5a6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		text-align: left;
+		font-size: 11px;
+		font-weight: 600;
+		color: #FFFFFF;
+		overflow-y: scroll;
+	}
+	
+	.title{
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+		background: $rtRed;
+		padding-top: 0px;
+		text-align: center;
+		font-size: 14px;
+		color: #FFFFFF;
+		font-weight: bold;
+		font-family: 'Exo 2', sans-serif;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-top-color: #dc4b4b;
+	}
+	
+	.votes{
+		display: none;
+	}
+}
+
+.voteBox{
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 10px;
+	padding-left: 10px;
+	background: $rtRed;
+	font-size: 18px;
+	color: #FFFFFF;
+	font-weight: 600;
+	font-family: 'Exo 2', sans-serif;
+	cursor: pointer;
+}
+
+.selected{
+	.glyphicon{
+		color: #e67e22;	
+	}
+}
+
+.voted{
+	.glyphicon{
+		color: #3498db;	
+	}
+}
+
+#movies{
+	
+}
+
+input[type='submit']{
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	display: block;
+	border-style: none;
+	color: #FFFFFF;
+	font-weight: 600;
+	font-family: 'Exo 2', sans-serif;
+	background: $rtRed;
+}
+
+.inActive{
+	//background: #bdc3c7 !important;
+	opacity: 0.3 !important;
+	cursor: not-allowed !important;
+}
+
+#footer{
+	max-width: 1000px;
+	height: 100px;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	background: #FFFFFF;
+	padding: 10px;
+	padding-top: 20px;
+	text-align: center;
+	font-style: italic;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: 'Exo 2', sans-serif;
+}
+
+#imageCredit{
+	width: 0;
+	height: 0;
+	background: #FFFFFF;
+	font-size: 140px;
+	color: $rtRed;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: bolder;
+	text-align: center;
+	opacity: 0;
+	display: none;
+}
+
+#cancleImageCred{
+	height: 230px !important;
+	background: #3498db;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #2980b9;
+	font-size: 100px;
+	color: white;
+	font-weight: bolder;
+	padding: 30px;
+	text-overflow: Visible overflow;
+}
+#imgHint{
+	width: 230px;
+	margin-top: 50px;
+	text-align: center;
+	font-size: 24px;
+	opacity: 0;
+	color: #3498db !important;
+}
